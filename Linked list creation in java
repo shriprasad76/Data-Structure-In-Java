@@ -1,0 +1,25 @@
+import java.util.LinkedList;
+
+public class LinkedListDemo {
+    public static void main(String[] args) {
+        LinkedList<String> fruits = new LinkedList<>();
+
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Cherry");
+
+        fruits.addFirst("Mango");
+        fruits.addLast("Pineapple");
+
+        System.out.println("Fruits list: " + fruits);
+
+        System.out.println("First fruit: " + fruits.getFirst());
+        System.out.println("Last fruit: " + fruits.getLast());
+
+        fruits.remove("Banana");
+        fruits.removeFirst();
+        fruits.removeLast();
+
+        System.out.println("Updated fruits list: " + fruits);
+    }
+}
